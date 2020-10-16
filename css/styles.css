@@ -1,0 +1,11 @@
+.container{
+    font-size: 25px;
+    font-style: inherit;
+    background-image: url(/images/pizza.jpeg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: justify;
+
+}
