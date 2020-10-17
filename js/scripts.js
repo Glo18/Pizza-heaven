@@ -1,3 +1,5 @@
 $(document).ready(function(){
-    $(.container)
+    $(#location).click(function(){
+        
+    })
 })
