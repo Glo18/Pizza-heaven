@@ -4,176 +4,181 @@
 <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/scripts.js"></script>
     <title>Pizza-heaven</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-    <h1 id="Pizza-heaven" class="">Pi <span id="spantext">zz</span>heaven</h1>
-    <div class="navi">
-        <ul class="nav-items">
-            <li>Menus</li>
-            <li>Orders</li>
-            <li>Contact</li>
-        </ul>
+        <h1 id="Pizza-heaven" class="">Pi <span id="spantext">zz</span>heaven</h1>
+        <div class="navi">
+            <ul class="nav-items">
+                <li><a href="#menus">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
         </div>
-        </nav>
+    </nav>
     <div class="landing">
         <div class="overlay">
-        <div id="push"></div>
-        <div class="landing text">
-            <h1 class="text-white text-center"><span class="pizza">Pizza</span><span class="exc">heaven</span></h1>
-            <h2 class="text-white text-centre">Get your pizza in an instant.</h2>
-        </div>
-        <div class="h-buttons text-center">
-         <button class="btn bg-info floater infinite delay-2s">Start</button>
-        </div>
-        </div>
-    </div>
-        <div class="welcome" id="welcome">
-            <br><br><br><br>
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img src="/images/pizza.jpeg" alt="pizza" class="Welcome-img">                     
+            <div id="push"></div>
+            <div class="landing text">
+                <h1 class="text-white text-center"><span class="pizza">Pizza</span><span class="exc">heaven</span></h1>
+                <h2 class="text-white text-centre">Get your pizza in an instant.</h2>
             </div>
-            <div class="col-md-6 welcome-txt">
-                <h1 class="text-center txt txt-big">welcome<span class="pizza">Pizza</span><span class="exc">heaven</span></h1>
-                <p class="text-center txt">The best you can ever imagine</p>
-                <p class="text-centre txt">Order and it shall be delivered.</p>
-                <a href="#menus">
-                <button class="btn bg-info mx-auto d-block menu-btn">Menu</button>
+            <div class="h-buttons text-center">
+                <a href="#welcome">
+                <button class="btn bg-info floater infinite delay-2s">Start</button>
                 </a>
             </div>
-                </div>
-            </div>
         </div>
-        <div id="menus"></div>
-        <br>
-        <div class="menu col-md-12">
-            <div class="menu-overlay">
-                <h1 class="text-center text-white" id="menu">Menu</h1>
-                <div class="pizza-menu row text-center">
-                    <figure class="col-sm-4">
-                        <img src="images/2.png" alt="large-pizza" class="wiggle">
-                        <figcaption class="text-white">large<br>1200/=</figcaption>
-                    </figure>
-                    <figure class="col-sm-4">
-                        <img src="images/2.png" alt="large-pizza" class="wiggle">
-                        <figcaption class="text-white">large<br>1200/=</figcaption>
-                    </figure>
-                    <figure class="col-sm-4">
-                        <img src="images/2.png" alt="large-pizza" class="wiggle">
-                        <figcaption class="text-white">large<br>1200/=</figcaption>
-                    </figure>
-                </div> 
-            </div>
-        </div>
-            <h1>Pizza-heaven</h1>
+    </div>
+    <div class="welcome" id="welcome">
+        <br><br><br><br>
+        <div class="col-sm-12">
             <div class="row">
-                <div class="col-md-6">
-                    <h2>Choose size of pizza</h2>
-                    <form id="Pizza type">
-                        <form class="form-group radio-button">
-                            <input type="radio" class="size labels" value="large" id="rad1" name="size" required>large -
-                            1200/=
-                            <br>
-                            <input type="radio" class="size labels" value="medium" id="rad1" name="size" required>medium
-                            - 900/=
-                            <br>
-                            <input type="radio" class="size labels" value="small" id="rad1" name="size" required>small -
-                            750/=
-                            <br>
-                        </form>
-                        <h3>Choose type of crust</h3>
-                        <form class="form-group radio-button">
-                            <input type="radio" class="crust labels" value="crispy" id="rad1" name="crust"
-                                required>crispy - 200/=
-                            <br>
-                            <input type="radio" class="crust labels" value="stuffed" id="rad1" name="crust"
-                                required>stuffed -150/=
-                            <br>
-                            <input type="radio" class="crust labels" value="gluten-free" id="rad1" name="crust"
-                                required>gluten-free - 100/=
-                            <br>
-                        </form>
-                        <h4>Choose toppings</h4>
-                        <form class="form-group radio-button">
-                            <input type="radio" class="toppings labels" value="chicken" id="rad1" name="toppings"
-                                required>chicken -300/=
-                            <br>
-                            <input type="radio" class="toppings labels" value="pineapple" id="rad1" name="toppings"
-                                required>pineapple -250/=
-                            <br>
-                            <input type="radio" class="toppings labels" value="pepperoni" id="rad1" name="toppings"
-                                required>pepperoni -350/=
-                            <br>
-                            <input type="radio" class="toppings labels" value="beef" id="rad1" name="toppings"
-                                required>beef - 200/=
-                            <br>
-                            <label for="number">Number of pizza's</label>
-                            <input type="number" class="form-control" id="number" placeholder="Number of pizza's" min="1" required>
-                        </form>
-                        <button type="submit" class="btn">submit</button>
-                       <div class="order-summary" id="sum-order">
-                           <h5 class="text-center" id="summary">Order summary</h5>
-                           <h6 class="text-center summary">Hello there,your order is as follows:</h6>
-                           <ol id="list" class="text-center sum">
-                           </ol>
-                       </div> 
-                        
-                        <p>Delivery choices</p>
-                        <form class="form-group radio-button">
-                            <input type="radio" class="Delivery" value="pick-up" id="rad1" name="Delivery"
-                                required>pick-up
-                            <br>
-                            <input type="radio" class="Delivery" value="door-step" id="rad1" name="Delivery"
-                                required>door-step
-                            <br>
-                        </form>
-                        <form>
-                                <div class="location">
-                                    <div class="form-group">
-                                        <label for="name">Enter your name</label>
-                                        <input type="text" class="form-control" id="name">
-                                        <label for="Location">Enter your location</label>
-                                        <input type="text" class="form-control" id="location">
-                                        <label for="Number">Enter your number</label>
-                                        <input type="text" class="form-control" id="number">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <br>
-
-                        <button type="submit" class="btn">submit</button>
-                </form>
-
-                <div class="contacts">
-                    <div class="contact-overlay">
-                        <h6 class="text-center contact text-white">Contacts:</h6>
-                        <div class="row">
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-5 subs">
-                                <h1 class="text-white text-center">Call Us</h1>
-                                <form>
-                                    <div class="email-info">
-                                        <div class="form-group fill-all-form">
-                                            <input type="email" class="form-control bg-transparent email" id="email" placeholder="Email">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-sm-1"></div>
-                        </div>
-                    </div>
+                <div class="col-sm-6">
+                    <img src="/images/pizza.jpeg" alt="pizza" class="Welcome-img">
+                </div>
+                <div class="col-md-6 welcome-txt">
+                    <h1 class="text-center txt txt-big">welcome<span class="pizza">Pizza</span><span
+                            class="exc">heaven</span></h1>
+                    <p class="text-center txt">The best you can ever imagine</p>
+                    <p class="text-centre txt">Order and it shall be delivered.</p>
+                    <a href="#menus">
+                        <button class="btn bg-info mx-auto d-block menu-btn">Menu</button>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="menus"></div>
+    <br>
+    <div class="menu col-md-12">
+        <div class="menu-overlay">
+            <h1 class="text-center text-white" id="menu">Menu</h1>
+            <div class="pizza-menu row text-center">
+                <figure class="col-sm-4">
+                    <img src="images/2.png" alt="large-pizza" class="wiggle">
+                    <figcaption class="text-white">large<br>1200/=</figcaption>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="images/2.png" alt="medium-pizza" class="wiggle">
+                    <figcaption class="text-white">medium<br>900/=</figcaption>
+                </figure>
+                <figure class="col-sm-4">
+                    <img src="images/2.png" alt="small-pizza" class="wiggle">
+                    <figcaption class="text-white">small<br>750/=</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="orders" id="order">
+        <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+        <div class="form-group row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 order overlay text-centre">
+                <h2>Choose size of pizza</h2>
+                <form class="form-group radio-button">
+                    <input type="radio" class="size labels" value="large" id="rad1" name="size" required>large -
+                    1200/=
+                    <br>
+                    <input type="radio" class="size labels" value="medium" id="rad1" name="size" required>medium
+                    - 900/=
+                    <br>
+                    <input type="radio" class="size labels" value="small" id="rad1" name="size" required>small -
+                    750/=
+                    <br>
+                </form>
+                <h3>Choose type of crust</h3>
+                <form class="form-group radio-button">
+                    <input type="radio" class="crust labels" value="crispy" id="rad1" name="crust" required>crispy -
+                    200/=
+                    <br>
+                    <input type="radio" class="crust labels" value="stuffed" id="rad1" name="crust" required>stuffed
+                    -150/=
+                    <br>
+                    <input type="radio" class="crust labels" value="gluten-free" id="rad1" name="crust"
+                        required>gluten-free - 100/=
+                    <br>
+                </form>
+                <h4>Choose toppings</h4>
+                <form class="form-group radio-button">
+                    <input type="radio" class="toppings labels" value="chicken" id="rad1" name="toppings"
+                        required>chicken -300/=
+                    <br>
+                    <input type="radio" class="toppings labels" value="pineapple" id="rad1" name="toppings"
+                        required>pineapple -250/=
+                    <br>
+                    <input type="radio" class="toppings labels" value="pepperoni" id="rad1" name="toppings"
+                        required>pepperoni -350/=
+                    <br>
+                    <input type="radio" class="toppings labels" value="beef" id="rad1" name="toppings" required>beef -
+                    200/=
+                    <br>
+                    <label for="number">Number of pizza's</label>
+                    <input type="number" class="form-control" id="number" placeholder="Number of pizza's" min="1"
+                        required>
+                </form>
+                <a href="#summary">
+                    <button type="submit" class="btn btn-success checkout" id="checkout">Checkout</button>
+                </a>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+    <div class="order-summary" id="sum-order">
+        <h5 class="text-center" id="summary">Order summary</h5>
+        <h6 class="text-center summary">Hello there,your order is as follows:</h6>
+        <ol id="list" class="text-center sum">
+        </ol>
+    </div>
+    <div class="cdata-overlay">
+        <div class="customerdata row">
+            <div class="col-sm-3"></div>
+            <form action="" class="form-group col-sm-6 data" id="data">
+                <label for="name">Enter your name</label>
+                <input type="text" class="form-control" id="name">
+                <label for="Location">Enter your location</label>
+                <input type="text" class="form-control" id="location">
+                <label for="Number">Enter your number</label>
+                <input type="text" class="form-control" id="phone">
+                <button class="btn bg-info text-center d-block mx-auto go" id="go" type="submit">Make delivery</button>
+            </form>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <div class="d-block mx-auto text-center">
+        <button class="deliver">Make delivery</button>
+        <button class="delivernot">Pick up</button>
+    </div>
+    </div>
+    <div class="contacts">
+        <div class="contact-overlay">
+            <h1 class="text-center contact text-white">Contacts:</h1>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5 subs">
+                    <h1 class="text-white text-center">Call Us</h1>
+                    <p class="text-center">+254 1234 5678</p>
+                    <form>
+                        <div class="email-info">
+                            <div class="form-group fill-all-form">
+                                <input type="email" class="form-control bg-transparent email" id="email"
+                                    placeholder="Email">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
     </div>
     </div>
 </body>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/scripts.js"></script>
 
 </html>
