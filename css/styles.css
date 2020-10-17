@@ -1,11 +1,37 @@
-.container{
-    font-size: 25px;
-    font-style: inherit;
-    background-image: url(/images/pizza.jpeg);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: justify;
-    
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #ffffff;
+}
+
+#spantext {
+    color: yellow;
+}
+
+.navi {
+    float: right;
+}
+
+.exc {
+    color: yellow;
+}
+
+#Pizza-heaven {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    font-weight: normal;
+    color: darkorange;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
