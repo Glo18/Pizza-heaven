@@ -22,7 +22,7 @@ $(function () {
                     totalPrice = (price * number) + 200;
                 } else if (crust === "stuffed") {
                     totalPrice = (price * number) + 150;
-                } else {
+                } else if(crust ==="gluten-free") {
                     totalPrice = (price * number) + 100;
                 }
                 break;
@@ -32,7 +32,7 @@ $(function () {
                     totalPrice = (price * number) + 200;
                 } else if (crust === "stuffed") {
                     totalPrice = (price * number) + 150;
-                } else {
+                } else if(crust === "gluten-free") {
                     totalPrice = (price * number) + 100;
                 }
                 break;
@@ -42,7 +42,7 @@ $(function () {
                     totalPrice = (price * number) + 200;
                 } else if (crust === "stuffed") {
                     totalPrice = (price * number) + 150;
-                } else {
+                } else if (crust === "gluten-free") {
                     totalPrice = (price * number) + 100;
                 }
                 break;
