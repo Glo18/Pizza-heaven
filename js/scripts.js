@@ -7,8 +7,7 @@ $(function () {
         let crust = $("#crust option:selected").val();
         let topping = $("#toppings option:selected").val();
         let number = $("#number").val();
-        console.log(size);
-
+        
 
         let order = (s, c, t, n, total) => {
             return { s, c, t, n, total };
@@ -76,10 +75,11 @@ $(function () {
                 $('.delivernot').show(1000);
         
                 $('#list').text(" ");
-                $("#list").append("<br>" + "Crust :   " + newOrder.f + "<br>" + "Size :   "
-                    + newOrder.c + "<br>" + "Toppings :     "
-                    + newOrder.t + "<br>" + " Number of pizzas :    "
-                    + newOrder.n + "<br>" + "Total Price :  "
+                $("#list").append("<br>" + "Crust :   "
+                    + newOrder.f + "<br>"  ,"Size :   "
+                    + newOrder.c + "<br>" ,"Toppings :     "
+                    + newOrder.t + "<br>" ," Number of pizzas :    "
+                    + newOrder.n + "<br>" ,"Total Price :  "
                     + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
             });
         
